@@ -6,6 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E87A987C1E2ABC5B00E0A983 /* ToxCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E87A987D1E2ABC5B00E0A983 /* Build configuration list for PBXAggregateTarget "ToxCore" */;
+			buildPhases = (
+				E87A98811E2ABE5800E0A983 /* Opus */,
+				E87A98821E2ABED500E0A983 /* Sodium */,
+				E87A98831E2ABF2100E0A983 /* Vpx */,
+				E87A98801E2ABC6300E0A983 /* ToxCore */,
+			);
+			dependencies = (
+			);
+			name = ToxCore;
+			productName = Libraries;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		E87A986B1E2AA86200E0A983 /* ActionWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98611E2AA86200E0A983 /* ActionWrapper.framework */; };
 		E87A98701E2AA86200E0A983 /* ActionWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E87A986F1E2AA86200E0A983 /* ActionWrapperTests.m */; };
@@ -108,6 +125,7 @@
 				E87A985D1E2AA86100E0A983 /* Frameworks */,
 				E87A985E1E2AA86100E0A983 /* Headers */,
 				E87A985F1E2AA86100E0A983 /* Resources */,
+				E87A987B1E2ABC2900E0A983 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -155,6 +173,11 @@
 						DevelopmentTeam = Y24464MUL3;
 						ProvisioningStyle = Automatic;
 					};
+					E87A987C1E2ABC5B00E0A983 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y24464MUL3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E87A985B1E2AA86100E0A983 /* Build configuration list for PBXProject "ActionWrapper" */;
@@ -171,6 +194,7 @@
 			targets = (
 				E87A98601E2AA86100E0A983 /* ActionWrapper */,
 				E87A98691E2AA86200E0A983 /* ActionWrapperTests */,
+				E87A987C1E2ABC5B00E0A983 /* ToxCore */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +215,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E87A987B1E2ABC2900E0A983 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		E87A98801E2ABC6300E0A983 /* ToxCore */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = ToxCore;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -x\ncd \"$TOXCORE_DIR\"\n\"$BUILD_TOXCORE_SCRIPT\" \"$BUILD_TOXCORE_DIR\" \"$BUILD_TOXCORE_DEPS\"";
+		};
+		E87A98811E2ABE5800E0A983 /* Opus */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Opus;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -x";
+			shellScript = "set -x\ncd \"$OPUS_DIR\"\n\"$BUILD_OPUS_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+		};
+		E87A98821E2ABED500E0A983 /* Sodium */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Sodium;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -x\ncd \"$SODIUM_DIR\"\n\"$BUILD_SODIUM_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+		};
+		E87A98831E2ABF2100E0A983 /* Vpx */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Vpx;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -x\ncd \"$VPX_DIR\"\n\"$BUILD_VPX_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E87A985C1E2AA86100E0A983 /* Sources */ = {
@@ -327,9 +424,12 @@
 				INFOPLIST_FILE = ActionWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.akademon.ActionWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
+				USER_HEADER_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/include";
 			};
 			name = Debug;
 		};
@@ -345,9 +445,12 @@
 				INFOPLIST_FILE = ActionWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.akademon.ActionWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
+				USER_HEADER_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/include";
 			};
 			name = Release;
 		};
@@ -370,6 +473,42 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.akademon.ActionWrapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E87A987E1E2ABC5B00E0A983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
+				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
+				BUILD_TOXCORE_DEPS = "$(TOXCORE_DIR)/build_ios/dependencies";
+				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios/toxcore";
+				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
+				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
+				DEVELOPMENT_TEAM = Y24464MUL3;
+				OPUS_DIR = "$(TOXCORE_DIR)/submodules/libopus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SODIUM_DIR = "$(TOXCORE_DIR)/submodules/libsodium";
+				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
+				VPX_DIR = "$(TOXCORE_DIR)/submodules/libvpx";
+			};
+			name = Debug;
+		};
+		E87A987F1E2ABC5B00E0A983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
+				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
+				BUILD_TOXCORE_DEPS = "$(TOXCORE_DIR)/build_ios/dependencies";
+				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios/toxcore";
+				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
+				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
+				DEVELOPMENT_TEAM = Y24464MUL3;
+				OPUS_DIR = "$(TOXCORE_DIR)/submodules/libopus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SODIUM_DIR = "$(TOXCORE_DIR)/submodules/libsodium";
+				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
+				VPX_DIR = "$(TOXCORE_DIR)/submodules/libvpx";
 			};
 			name = Release;
 		};
@@ -398,6 +537,14 @@
 			buildConfigurations = (
 				E87A98791E2AA86200E0A983 /* Debug */,
 				E87A987A1E2AA86200E0A983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E87A987D1E2ABC5B00E0A983 /* Build configuration list for PBXAggregateTarget "ToxCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87A987E1E2ABC5B00E0A983 /* Debug */,
+				E87A987F1E2ABC5B00E0A983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
