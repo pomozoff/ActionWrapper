@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ToxCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>E87A98691E2AA86200E0A983</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E87A987C1E2ABC5B00E0A983</key>
 		<dict>
 			<key>primary</key>
 			<true/>
