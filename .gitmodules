@@ -1,0 +1,3 @@
+[submodule "submodules/toxcore"]
+	path = submodules/toxcore
+	url = https://github.com/pomozoff/toxcore.git
