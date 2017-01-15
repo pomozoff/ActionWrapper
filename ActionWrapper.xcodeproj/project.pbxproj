@@ -243,7 +243,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -x\ncd \"$TOXCORE_DIR\"\n\"$BUILD_TOXCORE_SCRIPT\" \"$BUILD_TOXCORE_DIR\" \"$BUILD_TOXCORE_DEPS\"";
+			shellScript = "set -x\ncd \"$TOXCORE_DIR\"\n\"$BUILD_TOXCORE_SCRIPT\" \"$BUILD_TOXCORE_DIR\"";
 		};
 		E87A98811E2ABE5800E0A983 /* Opus */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -257,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "set -x\ncd \"$OPUS_DIR\"\n\"$BUILD_OPUS_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+			shellScript = "set -x\ncd \"$OPUS_DIR\"\n\"$BUILD_OPUS_SCRIPT\" \"$BUILD_TOXCORE_DIR\"";
 		};
 		E87A98821E2ABED500E0A983 /* Sodium */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -271,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -x\ncd \"$SODIUM_DIR\"\n\"$BUILD_SODIUM_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+			shellScript = "set -x\ncd \"$SODIUM_DIR\"\n\"$BUILD_SODIUM_SCRIPT\" \"$BUILD_TOXCORE_DIR\"";
 		};
 		E87A98831E2ABF2100E0A983 /* Vpx */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -285,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -x\ncd \"$VPX_DIR\"\n\"$BUILD_VPX_SCRIPT\" \"$BUILD_TOXCORE_DEPS\"";
+			shellScript = "set -x\ncd \"$VPX_DIR\"\n\"$BUILD_VPX_SCRIPT\" \"$BUILD_TOXCORE_DIR\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -481,8 +481,7 @@
 			buildSettings = {
 				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
 				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
-				BUILD_TOXCORE_DEPS = "$(TOXCORE_DIR)/build_ios/dependencies";
-				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios/toxcore";
+				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios";
 				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
 				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
@@ -499,8 +498,7 @@
 			buildSettings = {
 				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
 				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
-				BUILD_TOXCORE_DEPS = "$(TOXCORE_DIR)/build_ios/dependencies";
-				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios/toxcore";
+				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios";
 				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
 				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
