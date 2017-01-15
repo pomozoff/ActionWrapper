@@ -46,6 +46,7 @@
 		E87A986A1E2AA86200E0A983 /* ActionWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87A986F1E2AA86200E0A983 /* ActionWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionWrapperTests.m; sourceTree = "<group>"; };
 		E87A98711E2AA86200E0A983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87A98881E2AEB5600E0A983 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 			children = (
 				E87A98641E2AA86200E0A983 /* ActionWrapper.h */,
 				E87A98651E2AA86200E0A983 /* Info.plist */,
+				E87A98881E2AEB5600E0A983 /* Warnings.xcconfig */,
 			);
 			path = ActionWrapper;
 			sourceTree = "<group>";
@@ -318,6 +320,7 @@
 /* Begin XCBuildConfiguration section */
 		E87A98731E2AA86200E0A983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87A98881E2AEB5600E0A983 /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
