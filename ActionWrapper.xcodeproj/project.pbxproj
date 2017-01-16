@@ -29,13 +29,13 @@
 		E87A98721E2AA86200E0A983 /* ActionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E87A98641E2AA86200E0A983 /* ActionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E87A98861E2AEAF400E0A983 /* CoreWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E87A98841E2AEAF400E0A983 /* CoreWrapper.h */; };
 		E87A98871E2AEAF400E0A983 /* CoreWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E87A98851E2AEAF400E0A983 /* CoreWrapper.m */; };
-		E87A98991E2AF7E700E0A983 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98921E2AF7E700E0A983 /* libopus.a */; };
-		E87A989A1E2AF7E700E0A983 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98931E2AF7E700E0A983 /* libsodium.a */; };
-		E87A989B1E2AF7E700E0A983 /* libtoxav.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98941E2AF7E700E0A983 /* libtoxav.a */; };
-		E87A989C1E2AF7E700E0A983 /* libtoxcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98951E2AF7E700E0A983 /* libtoxcore.a */; };
-		E87A989D1E2AF7E700E0A983 /* libtoxdns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98961E2AF7E700E0A983 /* libtoxdns.a */; };
-		E87A989E1E2AF7E700E0A983 /* libtoxencryptsave.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98971E2AF7E700E0A983 /* libtoxencryptsave.a */; };
-		E87A989F1E2AF7E700E0A983 /* libvpx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98981E2AF7E700E0A983 /* libvpx.a */; };
+		E87A98B01E2D4A6100E0A983 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98A91E2D4A6100E0A983 /* libopus.a */; };
+		E87A98B11E2D4A6100E0A983 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AA1E2D4A6100E0A983 /* libsodium.a */; };
+		E87A98B21E2D4A6100E0A983 /* libtoxav.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AB1E2D4A6100E0A983 /* libtoxav.a */; };
+		E87A98B31E2D4A6100E0A983 /* libtoxcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AC1E2D4A6100E0A983 /* libtoxcore.a */; };
+		E87A98B41E2D4A6100E0A983 /* libtoxdns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AD1E2D4A6100E0A983 /* libtoxdns.a */; };
+		E87A98B51E2D4A6100E0A983 /* libtoxencryptsave.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AE1E2D4A6100E0A983 /* libtoxencryptsave.a */; };
+		E87A98B61E2D4A6100E0A983 /* libvpx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87A98AF1E2D4A6100E0A983 /* libvpx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +58,13 @@
 		E87A98841E2AEAF400E0A983 /* CoreWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreWrapper.h; sourceTree = "<group>"; };
 		E87A98851E2AEAF400E0A983 /* CoreWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreWrapper.m; sourceTree = "<group>"; };
 		E87A98881E2AEB5600E0A983 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
-		E87A98921E2AF7E700E0A983 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = submodules/toxcore/build_ios/lib/libopus.a; sourceTree = SOURCE_ROOT; };
-		E87A98931E2AF7E700E0A983 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = submodules/toxcore/build_ios/lib/libsodium.a; sourceTree = SOURCE_ROOT; };
-		E87A98941E2AF7E700E0A983 /* libtoxav.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxav.a; path = submodules/toxcore/build_ios/lib/libtoxav.a; sourceTree = SOURCE_ROOT; };
-		E87A98951E2AF7E700E0A983 /* libtoxcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxcore.a; path = submodules/toxcore/build_ios/lib/libtoxcore.a; sourceTree = SOURCE_ROOT; };
-		E87A98961E2AF7E700E0A983 /* libtoxdns.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxdns.a; path = submodules/toxcore/build_ios/lib/libtoxdns.a; sourceTree = SOURCE_ROOT; };
-		E87A98971E2AF7E700E0A983 /* libtoxencryptsave.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxencryptsave.a; path = submodules/toxcore/build_ios/lib/libtoxencryptsave.a; sourceTree = SOURCE_ROOT; };
-		E87A98981E2AF7E700E0A983 /* libvpx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvpx.a; path = submodules/toxcore/build_ios/lib/libvpx.a; sourceTree = SOURCE_ROOT; };
+		E87A98A91E2D4A6100E0A983 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = build_ios/lib/libopus.a; sourceTree = SOURCE_ROOT; };
+		E87A98AA1E2D4A6100E0A983 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = build_ios/lib/libsodium.a; sourceTree = SOURCE_ROOT; };
+		E87A98AB1E2D4A6100E0A983 /* libtoxav.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxav.a; path = build_ios/lib/libtoxav.a; sourceTree = SOURCE_ROOT; };
+		E87A98AC1E2D4A6100E0A983 /* libtoxcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxcore.a; path = build_ios/lib/libtoxcore.a; sourceTree = SOURCE_ROOT; };
+		E87A98AD1E2D4A6100E0A983 /* libtoxdns.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxdns.a; path = build_ios/lib/libtoxdns.a; sourceTree = SOURCE_ROOT; };
+		E87A98AE1E2D4A6100E0A983 /* libtoxencryptsave.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtoxencryptsave.a; path = build_ios/lib/libtoxencryptsave.a; sourceTree = SOURCE_ROOT; };
+		E87A98AF1E2D4A6100E0A983 /* libvpx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvpx.a; path = build_ios/lib/libvpx.a; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +72,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87A989B1E2AF7E700E0A983 /* libtoxav.a in Frameworks */,
-				E87A989A1E2AF7E700E0A983 /* libsodium.a in Frameworks */,
-				E87A989E1E2AF7E700E0A983 /* libtoxencryptsave.a in Frameworks */,
-				E87A989F1E2AF7E700E0A983 /* libvpx.a in Frameworks */,
-				E87A989D1E2AF7E700E0A983 /* libtoxdns.a in Frameworks */,
-				E87A989C1E2AF7E700E0A983 /* libtoxcore.a in Frameworks */,
-				E87A98991E2AF7E700E0A983 /* libopus.a in Frameworks */,
+				E87A98B21E2D4A6100E0A983 /* libtoxav.a in Frameworks */,
+				E87A98B11E2D4A6100E0A983 /* libsodium.a in Frameworks */,
+				E87A98B51E2D4A6100E0A983 /* libtoxencryptsave.a in Frameworks */,
+				E87A98B61E2D4A6100E0A983 /* libvpx.a in Frameworks */,
+				E87A98B41E2D4A6100E0A983 /* libtoxdns.a in Frameworks */,
+				E87A98B31E2D4A6100E0A983 /* libtoxcore.a in Frameworks */,
+				E87A98B01E2D4A6100E0A983 /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,13 +136,13 @@
 		E87A98891E2AEE6E00E0A983 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				E87A98921E2AF7E700E0A983 /* libopus.a */,
-				E87A98931E2AF7E700E0A983 /* libsodium.a */,
-				E87A98941E2AF7E700E0A983 /* libtoxav.a */,
-				E87A98951E2AF7E700E0A983 /* libtoxcore.a */,
-				E87A98961E2AF7E700E0A983 /* libtoxdns.a */,
-				E87A98971E2AF7E700E0A983 /* libtoxencryptsave.a */,
-				E87A98981E2AF7E700E0A983 /* libvpx.a */,
+				E87A98A91E2D4A6100E0A983 /* libopus.a */,
+				E87A98AA1E2D4A6100E0A983 /* libsodium.a */,
+				E87A98AB1E2D4A6100E0A983 /* libtoxav.a */,
+				E87A98AC1E2D4A6100E0A983 /* libtoxcore.a */,
+				E87A98AD1E2D4A6100E0A983 /* libtoxdns.a */,
+				E87A98AE1E2D4A6100E0A983 /* libtoxencryptsave.a */,
+				E87A98AF1E2D4A6100E0A983 /* libvpx.a */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -471,12 +471,12 @@
 				INFOPLIST_FILE = ActionWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_ios/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.akademon.ActionWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
-				USER_HEADER_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build_ios/include";
 			};
 			name = Debug;
 		};
@@ -492,12 +492,12 @@
 				INFOPLIST_FILE = ActionWrapper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/build_ios/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.akademon.ActionWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
-				USER_HEADER_SEARCH_PATHS = "$(TOXCORE_DIR)/build_ios/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build_ios/include";
 			};
 			name = Release;
 		};
@@ -526,34 +526,34 @@
 		E87A987E1E2ABC5B00E0A983 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
-				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
-				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios";
-				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
-				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
+				BUILD_OPUS_SCRIPT = "$(PROJECT_DIR)/build_libopus_ios.sh";
+				BUILD_SODIUM_SCRIPT = "$(PROJECT_DIR)/build_libsoudium_ios.sh";
+				BUILD_TOXCORE_DIR = "$(PROJECT_DIR)/build_ios";
+				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_ios.sh";
+				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
-				OPUS_DIR = "$(TOXCORE_DIR)/submodules/libopus";
+				OPUS_DIR = "$(PROJECT_DIR)/submodules/libopus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SODIUM_DIR = "$(TOXCORE_DIR)/submodules/libsodium";
+				SODIUM_DIR = "$(PROJECT_DIR)/submodules/libsodium";
 				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
-				VPX_DIR = "$(TOXCORE_DIR)/submodules/libvpx";
+				VPX_DIR = "$(PROJECT_DIR)/submodules/libvpx";
 			};
 			name = Debug;
 		};
 		E87A987F1E2ABC5B00E0A983 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_OPUS_SCRIPT = "$(TOXCORE_DIR)/build_libopus_ios.sh";
-				BUILD_SODIUM_SCRIPT = "$(TOXCORE_DIR)/build_libsoudium_ios.sh";
-				BUILD_TOXCORE_DIR = "$(TOXCORE_DIR)/build_ios";
-				BUILD_TOXCORE_SCRIPT = "$(TOXCORE_DIR)/build_ios.sh";
-				BUILD_VPX_SCRIPT = "$(TOXCORE_DIR)/build_libvpx.sh";
+				BUILD_OPUS_SCRIPT = "$(PROJECT_DIR)/build_libopus_ios.sh";
+				BUILD_SODIUM_SCRIPT = "$(PROJECT_DIR)/build_libsoudium_ios.sh";
+				BUILD_TOXCORE_DIR = "$(PROJECT_DIR)/build_ios";
+				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_ios.sh";
+				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
-				OPUS_DIR = "$(TOXCORE_DIR)/submodules/libopus";
+				OPUS_DIR = "$(PROJECT_DIR)/submodules/libopus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SODIUM_DIR = "$(TOXCORE_DIR)/submodules/libsodium";
+				SODIUM_DIR = "$(PROJECT_DIR)/submodules/libsodium";
 				TOXCORE_DIR = "$(PROJECT_DIR)/submodules/toxcore";
-				VPX_DIR = "$(TOXCORE_DIR)/submodules/libvpx";
+				VPX_DIR = "$(PROJECT_DIR)/submodules/libvpx";
 			};
 			name = Release;
 		};
