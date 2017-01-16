@@ -1,3 +1,12 @@
 [submodule "submodules/toxcore"]
 	path = submodules/toxcore
-	url = https://github.com/pomozoff/toxcore.git
+	url = https://github.com/irungentoo/toxcore.git
+[submodule "submodules/libvpx"]
+	path = submodules/libvpx
+	url = https://chromium.googlesource.com/webm/libvpx
+[submodule "submodules/libopus"]
+	path = submodules/libopus
+	url = https://git.xiph.org/opus.git
+[submodule "submodules/libsodium"]
+	path = submodules/libsodium
+	url = https://github.com/jedisct1/libsodium.git
