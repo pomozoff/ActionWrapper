@@ -10,7 +10,7 @@
 
 @interface CoreWrapper : NSObject
 
-- (void)open;
-- (void)close;
+- (void)start;
+- (void)kill;
 
 @end

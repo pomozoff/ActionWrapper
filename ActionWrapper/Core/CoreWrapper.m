@@ -9,21 +9,29 @@
 #import "CoreWrapper.h"
 #import "tox/tox.h"
 
+@interface CoreWrapper()
+
+@property (nonatomic, assign, nullable) Tox *tox;
+
+@end
+
 @implementation CoreWrapper
 
-- (void)open {
+- (void)start {
     struct Tox_Options options;
     tox_options_default(&options);
     
     TOX_ERR_NEW error;
-    Tox *tox = tox_new(&options, &error);
+    self.tox = tox_new(&options, &error);
+    tox_options_free(&options);
     
-    const char *name_str = "Echo Bot";
-    const uint8_t name = (uint8_t)atoi(name_str);
-    tox_self_set_name(tox, &name, strlen(name_str), NULL);
+    if (!self.tox) {
+        NSLog(@"Failed to start Tox, error code: %u", error);
+    }
 }
-- (void)close {
-    
+- (void)kill {
+    tox_kill(self.tox);
+    self.tox = nil;
 }
 
 @end
