@@ -547,8 +547,8 @@
 				BUILD_OPUS_SCRIPT = "$(PROJECT_DIR)/build_libopus_ios.sh";
 				BUILD_SODIUM_SCRIPT = "$(PROJECT_DIR)/build_libsoudium_ios.sh";
 				BUILD_TOXCORE_DIR = "$(PROJECT_DIR)/build_ios";
-				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_ios.sh";
-				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx.sh";
+				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_toxcore_ios.sh";
+				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx_ios.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
 				OPUS_DIR = "$(PROJECT_DIR)/submodules/libopus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,8 +564,8 @@
 				BUILD_OPUS_SCRIPT = "$(PROJECT_DIR)/build_libopus_ios.sh";
 				BUILD_SODIUM_SCRIPT = "$(PROJECT_DIR)/build_libsoudium_ios.sh";
 				BUILD_TOXCORE_DIR = "$(PROJECT_DIR)/build_ios";
-				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_ios.sh";
-				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx.sh";
+				BUILD_TOXCORE_SCRIPT = "$(PROJECT_DIR)/build_toxcore_ios.sh";
+				BUILD_VPX_SCRIPT = "$(PROJECT_DIR)/build_libvpx_ios.sh";
 				DEVELOPMENT_TEAM = Y24464MUL3;
 				OPUS_DIR = "$(PROJECT_DIR)/submodules/libopus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,6 +594,7 @@
 				E87A98771E2AA86200E0A983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87A98781E2AA86200E0A983 /* Build configuration list for PBXNativeTarget "ActionWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +603,7 @@
 				E87A987A1E2AA86200E0A983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87A987D1E2ABC5B00E0A983 /* Build configuration list for PBXAggregateTarget "ToxCore" */ = {
 			isa = XCConfigurationList;
@@ -610,6 +612,7 @@
 				E87A987F1E2ABC5B00E0A983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
