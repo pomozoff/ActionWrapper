@@ -9,12 +9,13 @@ OPT_FLAGS="-O3"
 MAKE_JOBS=$(sysctl -n hw.ncpu)
 MIN_IOS_VERSION="9.0"
 BUILD_PATH="${1}"
+BITCODE_FLAG="-fembed-bitcode"
 
 dobuild() {
     export CC="$(xcrun -find -sdk $SDK cc)"
     export CXX="$(xcrun -find -sdk $SDK cxx)"
     export CPP="$(xcrun -find -sdk $SDK cpp)"
-    export CFLAGS="$HOST_FLAGS $OPT_FLAGS"
+    export CFLAGS="$BITCODE_FLAG $HOST_FLAGS $OPT_FLAGS"
     export CXXFLAGS="$CFLAGS"
     export LDFLAGS="$HOST_FLAGS --specs=nosys.specs"
 
