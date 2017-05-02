@@ -36,7 +36,6 @@
 		E87A98C21E2D625F00E0A983 /* ActionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E87A98BF1E2D625F00E0A983 /* ActionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E87A98C81E2D627200E0A983 /* CoreWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E87A98C61E2D627200E0A983 /* CoreWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E87A98C91E2D627200E0A983 /* CoreWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E87A98C71E2D627200E0A983 /* CoreWrapper.m */; };
-		E87A98CA1E2D628700E0A983 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87A98C01E2D625F00E0A983 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,7 +221,7 @@
 		E87A98581E2AA86100E0A983 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Anton Pomozov";
 				TargetAttributes = {
 					E87A98601E2AA86100E0A983 = {
@@ -266,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87A98CA1E2D628700E0A983 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
